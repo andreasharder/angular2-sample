@@ -12,13 +12,13 @@
       </div>
       <div class="form-group">
         <label>Topic: </label>
-        <input type="text" #skills placeholder="Talks about...">
+        <input type="text" #topic placeholder="Talks about...">
       </div>
       <div class="form-group">
           <label>Date: </label>
           <input type="date" #date>
       </div>
-      <button type="submit"  class="btn btn-success" (click)="onAdd(name.value, skills.value, date.value)">Add</button>
+      <button type="submit"  class="btn btn-success" (click)="onAdd(name.value, topic.value, date.value)">Add</button>
     </form>
   </div>
 </div>

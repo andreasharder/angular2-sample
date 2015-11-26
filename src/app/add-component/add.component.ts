@@ -11,7 +11,7 @@ import {HeroService, Speaker} from '../hero.service';
 export class AddComponent {
 	constructor(private _heroService: HeroService){}
 
-	onAdd(name: string, skills: string, date: Date) {
-		this._heroService.add(name, skills, date);
+	onAdd(name: string, topic: string, date: Date) {
+		this._heroService.add(name, topic, date);
 	}
 }

@@ -5,7 +5,7 @@ const FIREBASE_URL = 'https://heroes2015.firebaseio.com/';
 export class Speaker{
 	key: string;
 	name: string;
-	skills: string;
+	topic: string;
 	date: string;
 }
 
@@ -44,14 +44,14 @@ export class HeroService{
 		var ref = this.firebase.child(speaker.key);
 		var newValues = {
 			name:speaker.name,
-			skills: speaker.skills,
+			topic: speaker.topic,
 			date: speaker.date
 		};
 		ref.update(newValues);
 	}
 
-	add(name: string, skills: string, date: Date){
-		var newSpeaker = { name:name, skills: skills, date: date };
+	add(name: string, topic: string, date: Date){
+		var newSpeaker = { name:name, topic: topic, date: date };
 		this.firebase.push(newSpeaker);
 	}
 
