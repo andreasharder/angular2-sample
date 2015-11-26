@@ -20,6 +20,6 @@ export class HeroesComponent{
 		this.selectedHero = hero;
 	}
     getHeroes(){
-        return this._heroService.getHeroes();
+        return this._heroService.getSpeakers();
     }
 }

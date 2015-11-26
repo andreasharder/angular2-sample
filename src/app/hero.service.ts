@@ -55,7 +55,7 @@ export class HeroService{
 		this.firebase.push(newSpeaker);
 	}
 
-	getHeroes():Speaker[]{
+	getSpeakers():Speaker[]{
 		return this.speakerList;
 	}
 

@@ -15,6 +15,6 @@ export class DashboardComponent{
 	constructor(private _heroService: HeroService){}
 
 	getHeroes(){
-		return this._heroService.getHeroes();
+		return this._heroService.getSpeakers();
 	}
 }
