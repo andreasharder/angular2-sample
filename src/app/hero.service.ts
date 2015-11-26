@@ -5,7 +5,6 @@ const FIREBASE_URL = 'https://heroes2015.firebaseio.com/';
 export class Hero{
 	key: string;
 	name: string;
-	score: number;
 	skills: string;
 	date: string;
 }
@@ -45,7 +44,6 @@ export class HeroService{
 		var ref = this.firebase.child(hero.key);
 		var newValues = {
 			name:hero.name,
-			score:hero.score,
 			skills: hero.skills,
 			date: hero.date
 		};
