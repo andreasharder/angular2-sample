@@ -21,7 +21,7 @@ import {HeroService} from '../hero.service';
 	directives: [ROUTER_DIRECTIVES]
 })
 class AppComponent {
-	public title = 'Board of Speeker';
+	public title = 'Board of Speakers';
 }
 
 bootstrap(AppComponent, [ROUTER_PROVIDERS, HeroService]);

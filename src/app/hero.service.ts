@@ -97,7 +97,7 @@ export class HeroService{
 
 	private sortList() {
 		this.heroList = this.heroList.sort((a, b) => {
-			return new Date(a.date) - new Date(b.date);
+			return new Date(a.date).valueOf() - new Date(b.date).valueOf();
 		});
 	}
 }
