@@ -7,6 +7,8 @@ export class Speaker{
 	name: string;
 	topic: string;
 	date: string;
+	done:  boolean;
+	rating: number;
 }
 
 export class HeroService{
@@ -43,15 +45,22 @@ export class HeroService{
 	save(speaker: Speaker){
 		var ref = this.firebase.child(speaker.key);
 		var newValues = {
-			name:speaker.name,
+			name: speaker.name,
 			topic: speaker.topic,
-			date: speaker.date
+			date: speaker.date,
 		};
+
 		ref.update(newValues);
 	}
 
 	add(name: string, topic: string, date: Date){
-		var newSpeaker = { name:name, topic: topic, date: date };
+		var newSpeaker = {
+			name:name,
+			topic: topic,
+			date: date,
+			done: false,
+			rating: 0
+		};
 		this.firebase.push(newSpeaker);
 	}
 
