@@ -1,5 +1,5 @@
 import {Component, View} from 'angular2/angular2';
-import {HeroService, Hero} from '../hero.service';
+import {HeroService, Speaker} from '../hero.service';
 
 @Component({
   selector: 'hero-card',
@@ -11,7 +11,7 @@ import {HeroService, Hero} from '../hero.service';
 export class HeroCardComponent {
     constructor(private _heroService: HeroService){}
 
-    removeHero(hero: Hero){
+    removeHero(hero: Speaker){
         this._heroService.remove(hero);
     }
 }

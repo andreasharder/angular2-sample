@@ -1,6 +1,6 @@
 import {Component, View, CORE_DIRECTIVES} from 'angular2/angular2';
 import {Router} from 'angular2/router';
-import {Hero, HeroService} from '../hero.service';
+import {Speaker, HeroService} from '../hero.service';
 import {DetailsComponent} from '../details-component/details.component';
 
 @Component({
@@ -12,11 +12,11 @@ import {DetailsComponent} from '../details-component/details.component';
     directives: [CORE_DIRECTIVES, DetailsComponent]
 })
 export class HeroesComponent{
-	public selectedHero: Hero;
+	public selectedHero: Speaker;
 
     constructor(private _heroService: HeroService){}
 
-	onSelect(hero:Hero){
+	onSelect(hero:Speaker){
 		this.selectedHero = hero;
 	}
     getHeroes(){

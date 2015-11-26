@@ -1,5 +1,5 @@
 import {Component, View, FORM_DIRECTIVES} from 'angular2/angular2';
-import {HeroService, Hero} from '../hero.service';
+import {HeroService, Speaker} from '../hero.service';
 
 @Component({
   selector: 'hero-add',
