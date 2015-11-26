@@ -1,6 +1,6 @@
 {
-  "name": "angular2-tour-of-heroes",
-  "version": "0.0.1",
+  "name": "angular2-application",
+  "version": "0.0.2",
   "scripts": {
     "tsc": "tsc -p src -w",
     "start": "live-server --open=src"
