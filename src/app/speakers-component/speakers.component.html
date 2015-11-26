@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col">
+		<h2>Speakers:</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<ul class="speakers">
+			<li *ng-for="#speaker of getSpeakers()" (click)="onSelect(speaker)">
+				<span class="text-success"><i class="fa fa-2x fa-user-secret"></i></span> {{speaker.name}}
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<div *ng-if="selectedSpeaker">
+			<speaker-details [speaker]="selectedSpeaker"></speaker-details>
+		</div>
+	</div>
+</div>

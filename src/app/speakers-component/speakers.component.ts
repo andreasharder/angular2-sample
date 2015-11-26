@@ -4,22 +4,22 @@ import {Speaker, HeroService} from '../hero.service';
 import {DetailsComponent} from '../details-component/details.component';
 
 @Component({
-    selector: 'my-heroes'
+    selector: 'my-speakers'
 })
 @View({
-    templateUrl: 'app/heroes-component/heroes.component.html',
-    styleUrls: ['app/heroes-component/heroes.component.css'],
+    templateUrl: 'app/speakers-component/speakers.component.html',
+    styleUrls: ['app/speakers-component/speakers.component.css'],
     directives: [CORE_DIRECTIVES, DetailsComponent]
 })
-export class HeroesComponent{
-	public selectedHero: Speaker;
+export class SpeakersComponent{
+	public selectedSpeaker: Speaker;
 
     constructor(private _heroService: HeroService){}
 
-	onSelect(hero:Speaker){
-		this.selectedHero = hero;
+	onSelect(speaker:Speaker){
+		this.selectedSpeaker = speaker;
 	}
-    getHeroes(){
+    getSpeakers(){
         return this._heroService.getSpeakers();
     }
 }
