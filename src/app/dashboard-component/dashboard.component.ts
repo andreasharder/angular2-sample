@@ -1,7 +1,7 @@
 import {Component, View, NgFor} from 'angular2/angular2';
 import {Router} from 'angular2/router';
 import {Speaker, HeroService} from '../hero.service';
-import {HeroCardComponent} from '../hero-card-component/hero.card.component';
+import {HeroCardComponent} from '../speaker-card-component/speaker.card.component';
 
 @Component({
 	selector: 'my-dashboard'
@@ -14,7 +14,7 @@ export class DashboardComponent{
 
 	constructor(private _heroService: HeroService){}
 
-	getHeroes(){
+	getSpeaker(){
 		return this._heroService.getSpeakers();
 	}
 }
