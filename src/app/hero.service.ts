@@ -7,6 +7,7 @@ export class Hero{
 	name: string;
 	score: number;
 	skills: string;
+	date: string;
 }
 
 export class HeroService{
@@ -45,13 +46,14 @@ export class HeroService{
 		var newValues = {
 			name:hero.name,
 			score:hero.score,
-			skills: hero.skills
+			skills: hero.skills,
+			date: hero.date
 		};
 		ref.update(newValues);
 	}
 
-	add(name: string, score: string, skills: string){
-		var newHero = { name:name, score:score, skills: skills };
+	add(name: string, skills: string, date: Date){
+		var newHero = { name:name, skills: skills, date: date };
 		this.firebase.push(newHero);
 	}
 
@@ -97,7 +99,7 @@ export class HeroService{
 
 	private sortList() {
 		this.heroList = this.heroList.sort((a, b) => {
-			return b.score - a.score;
+			return new Date(a.date) - new Date(b.date);
 		});
 	}
 }

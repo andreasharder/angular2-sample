@@ -11,7 +11,7 @@ import {HeroService, Hero} from '../hero.service';
 export class AddComponent {
 	constructor(private _heroService: HeroService){}
 
-	onAdd(name: string, score: string, skills: string) {
-		this._heroService.add(name, score, skills);
+	onAdd(name: string, skills: string, date: Date) {
+		this._heroService.add(name, skills, date);
 	}
 }
