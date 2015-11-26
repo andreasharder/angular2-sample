@@ -2,8 +2,8 @@ import {Component, View, FORM_DIRECTIVES} from 'angular2/angular2';
 import {HeroService, Speaker} from '../hero.service';
 
 @Component({
-  selector: 'hero-details',
-  properties: ['hero']
+  selector: 'speaker-details',
+  properties: ['speaker']
 })
 @View({
   templateUrl: 'app/details-component/details.component.html',
@@ -14,7 +14,7 @@ export class DetailsComponent {
 
 	constructor(private _heroService: HeroService){}
 
-	onSubmit(hero: Speaker) {
-		this._heroService.save(hero);
+	onSubmit(speaker: Speaker) {
+		this._heroService.save(speaker);
 	}
 }

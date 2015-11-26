@@ -2,7 +2,7 @@ import {Component, View, FORM_DIRECTIVES} from 'angular2/angular2';
 import {HeroService, Speaker} from '../hero.service';
 
 @Component({
-  selector: 'hero-add',
+  selector: 'speaker-add',
 })
 @View({
   templateUrl: 'app/add-component/add.component.html',

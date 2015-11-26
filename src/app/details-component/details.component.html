@@ -1,18 +1,18 @@
-<h3>{{hero.name}} details:</h3>
+<h3>{{speaker.name}} details:</h3>
 <div>
 	<form class="form-inline">
 		<div class="form-group">
 			<label>Name: </label>
-			<input type="text" [(ng-model)]="hero.name" placeholder="Name...">
+			<input type="text" [(ng-model)]="speaker.name" placeholder="Name...">
 		</div>
 		<div class="form-group">
 			<label>Topic: </label>
-			<input type="text" [(ng-model)]="hero.topic" placeholder="Talks about...">
+			<input type="text" [(ng-model)]="speaker.topic" placeholder="Talks about...">
 		</div>
 		<div class="form-group">
 			<label>Date: </label>
-			<input type="date" [(ng-model)]="hero.date">
+			<input type="date" [(ng-model)]="speaker.date">
 		</div>
-		<button type="submit"  class="btn btn-success" (click)="onSubmit(hero)">Save</button>
+		<button type="submit"  class="btn btn-success" (click)="onSubmit(speaker)">Save</button>
 	</form>
 </div>
