@@ -1,7 +1,7 @@
 Angular 2 application
 ===============
 
-Application uses alpha 42
+Application uses alpha 46
 
 Online tutorial: https://angular.io/docs/ts/latest/tutorial/
 

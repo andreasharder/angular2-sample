@@ -6,11 +6,11 @@
     "start": "live-server --open=src"
   },
   "dependencies": {
-    "angular2": "2.0.0-alpha.42",
+    "angular2": "2.0.0-alpha.46",
     "systemjs": "0.19.2"
   },
   "devDependencies": {
-    "live-server": "^0.8.1",
+    "live-server": "^0.8.2",
     "typescript": "^1.6.2"
   }
 }
