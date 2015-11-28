@@ -1,24 +1,24 @@
 <div class="row">
-  <div class="col">
-    <h2></h2>
-  </div>
+    <div class="col">
+        <h3>Add new speaker:</h3>
+    </div>
 </div>
 <div class="row">
-  <div class="col-md-10">
-    <form class="form-inline">
-      <div class="form-group">
-        <label>Name: </label>
-        <input type="text" #name  placeholder="Name...">
-      </div>
-      <div class="form-group">
-        <label>Topic: </label>
-        <input type="text" #topic placeholder="Talks about...">
-      </div>
-      <div class="form-group">
-          <label>Date: </label>
-          <input type="date" #date>
-      </div>
-      <button type="submit"  class="btn btn-success" (click)="onAdd(name.value, topic.value, date.value)">Add</button>
-    </form>
-  </div>
+    <div class="col">
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Name: </label>
+                <input type="text" #name  placeholder="Name...">
+            </div>
+            <div class="form-group">
+                <label>Topic: </label>
+                <input type="text" #topic placeholder="Talks about...">
+            </div>
+            <div class="form-group">
+                <label>Date: </label>
+                <input type="date" #date>
+            </div>
+            <button type="submit"  class="btn btn-success" (click)="onAdd(name.value, topic.value, date.value)">Add</button>
+        </form>
+    </div>
 </div>
