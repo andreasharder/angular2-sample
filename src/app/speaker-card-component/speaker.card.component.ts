@@ -8,7 +8,7 @@ import {HeroService, Speaker} from '../hero.service';
 @View({
     templateUrl: 'app/speaker-card-component/speaker.card.component.html'
 })
-export class HeroCardComponent {
+export class SpeakerCardComponent {
     constructor(private _heroService: HeroService){}
 
     removeSpeaker(speaker: Speaker){
